@@ -34,6 +34,9 @@ public class Ramp : MonoBehaviour {
 
 			line.SetPosition (i, new Vector3(x, y, 0));
 		}
+		//http://fooplot.com/#W3sidHlwZSI6MCwiZXEiOiIxLXNpbigxLjEqKHgrMSkpKjIiLCJjb2xvciI6IiMwMDAwMDAifSx7InR5cGUiOjAsImVxIjoiLTEuMSpjb3MoMS4xKih4KzEpKSoyIiwiY29sb3IiOiIjMDAwMDAwIn0seyJ0eXBlIjowLCJlcSI6InheMiIsImNvbG9yIjoiIzAwMDAwMCJ9LHsidHlwZSI6MTAwMCwid2luZG93IjpbIi0xIiwiMSIsIi0xIiwiMSJdfV0-
+		//function: 1 - sin(1.1 * (x + 1)) * 2
+		//derivate: -1.1* cos(1.1 * (x + 1)) * 2
 	}
 
 	public Vector3 GetPosition(int x) {
