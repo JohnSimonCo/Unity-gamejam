@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DrawRamp.cs" />
+     <Compile Include="Assets\Ramp.cs" />
+     <Compile Include="Assets\RideRamp.cs" />
      <Compile Include="Assets\Test.cs" />
+     <Compile Include="Assets\asd.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
