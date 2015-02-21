@@ -19,8 +19,7 @@ public class RideRamp : MonoBehaviour {
 
 		index %= Ramp.Resolution;
 
-		Vector2 pos = Ramp.GetPosition (index);
-		print (pos);
+		Vector3 pos = Ramp.GetPosition (index);
 		transform.position = new Vector3(pos.x, pos.y, transform.position.z);
 
 		float angle = Ramp.GetAngle (index);

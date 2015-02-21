@@ -12,7 +12,7 @@ public class Ramp : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		Positions = new Vector2[Resolution];
+		Positions = new Vector3[Resolution];
 		Angles = new float[Resolution];
 
 		LineRenderer line = GetComponent<LineRenderer>();
@@ -29,14 +29,14 @@ public class Ramp : MonoBehaviour {
 			x *= Scale.x;
 			y *= Scale.y;
 
-			Positions[i] = new Vector3(x, y, 0);
+			Positions[i] = transform.TransformPoint(new Vector3(x, y, 0));
 			Angles[i] = Mathf.Atan(derivative) * 180 / Mathf.PI;
 
-			line.SetPosition (i, new Vector3(Positions[i].x, Positions[i].y, 0));
+			line.SetPosition (i, new Vector3(x, y, 0));
 		}
 	}
 
-	public Vector2 GetPosition(int x) {
+	public Vector3 GetPosition(int x) {
 		return Positions[x];
 	}
 
